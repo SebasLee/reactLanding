@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.app {
+    background-image: url('../images/login-bg.jpg');
+    background-size: cover;
+    background-position: 70% 70%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.flex-container {
+    margin-left: 70%;
+    background-color: white;
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+}
+
+.flex-container img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 65px;
+    color: #8B8989;
+}
+
+input[name="username"] {
+    background-image: url('../images/user-1.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+input[name="password"] {
+    background-image: url(../images/user-1.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+input[type="text"] {
+    background-color: #E2E2E2;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 25px;
+}
+
+.password {
+    margin-bottom: -9px;
+}
+
+.memory {
+    font-size: 14px;
+    color: #8B8989;
+    margin-right: 0px;
+    margin-bottom: 25px;
+}
+
+.memory label {
+    margin-left: 5px;
+}
+
+.memory a {
+    margin-left: 80px;
+    color: #80B279;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #80B279;
+    padding: 15px;
+    padding-left: 119px;
+    padding-right: 119px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .app {
+        width: 100%;    
+    }
+
+    .flex-container {
+        margin-top: 40px;
+        margin-left: 0;
+        height: 700px;
+        width: 100%;
+    }
+
+    .flex-container img {
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-right: 260px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .flex-container {
+        margin-top: 30px;
+        margin-left: 0;
+        height: 630px;
+        width: 100%;
+    }
+
+    .flex-container img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-right: 260px;
+    }
+}
